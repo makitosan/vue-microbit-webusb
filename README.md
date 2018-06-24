@@ -1,6 +1,10 @@
 # vue-microbit-webusb
 Vue module to connect micro:bit via WebUSB
 
+## DEMO
+
+https://makitosan.github.io/vue-microbit-webusb
+
 # HOW TO BUILD
 ## DEMO BUILD
 

@@ -1,3 +1,4 @@
+// to enable to load <vue-microbit-webusb> format name this template as "Webusb" not "WebUSB"
 import VueMicrobitWebusb from 'src/VueMicrobitWebUSB.vue'
 
 export default {
@@ -11,7 +12,12 @@ export default {
   },
   methods: {
     onDeviceConnected: function (device) {
-      device && console.log(device.serialNumber)
+      if(device) {
+        console.log(device.serialNumber);
+        // invoke ivent for serial number
+        let event = new CustomEvent('microbit-connected', {'detail': {'serialNumber': device.serialNumber}});
+        document.dispatchEvent(event);
+      }
     }
   }
 }
