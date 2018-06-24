@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue micro:bit WebUSB</title>
+	<meta name="language" content="en-EN" />
+	<meta name="author" content="makitosan" />
+	<link rel="author" href="https://github.com/makitosan" />
+	<link rel="publisher" href="https://github.com/makitosan" />
+	<meta name="keywords" content="vue micro:bit WebUSB" />
+	<meta name="description" content="Vue 2 Component for connecting micro:bit via WebSUB" />
+	<meta property="og:title" content="Vue micro:bit WebUSB" />
+	<meta property="og:description" content="Vue 2 Component for connecting micro:bit via WebSUB" />
+	<meta property="og:url" content="https://makitosan.github.io/vue-microbit-webusb/" />
+	<meta property="og:site_name" content="vue-microbit-webusb" />
+	<meta property="og:type" content="website" />
+	<link rel="home" href="https://makitosan.github.io/vue-microbit-webusb">
+
+    <% for (var chunk in htmlWebpackPlugin.files.css) { %>
+      <link rel="preload" href="<%= htmlWebpackPlugin.files.css[chunk] %>"  as="style">
+    <% } %>
+
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+      <link rel="preload" href="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script">
+    <% } %>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

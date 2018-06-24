@@ -1,0 +1,70 @@
+{
+  "name": "vue-microbit-webusb",
+  "description": "Vue 2 Component for connecting micro:bit via WebUSB",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "makitosan (https://github.com/makitosan/)",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --open",
+    "build-demo": "cross-env NODE_ENV=production webpack --mode production --progress --hide-modules",
+    "build-lib": "cross-env NODE_ENV=production webpack --mode production --progress --hide-modules --config webpack.config.dist.js",
+    "test": "./node_modules/.bin/jest --coverage"
+  },
+  "main": "dist/vue-microbit-webusb.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makitosan/vue-microbit-webusb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/makitosan/vue-microbit-webusb/issues"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.19",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "compression-webpack-plugin": "^1.1.11",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.0.1",
+    "jest-serializer-vue": "^2.0.2",
+    "mini-css-extract-plugin": "0.4.0",
+    "node-sass": "^4.9.0",
+    "optimize-css-assets-webpack-plugin": "4.0.2",
+    "sass-loader": "^7.0.1",
+    "uglifyjs-webpack-plugin": "1.2.5",
+    "vue-highlightjs": "1.3.3",
+    "vue-jest": "^2.6.0",
+    "vue-loader": "^15.2.2",
+    "vue-script2": "^2.0.2",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-serve": "^1.0.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
+  }
+}
