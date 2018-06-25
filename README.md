@@ -1,4 +1,4 @@
-!{}(https://travis-ci.org/makitosan/vue-microbit-webusb.svg?branch=master)
+![](https://travis-ci.org/makitosan/vue-microbit-webusb.svg?branch=master)
 
 # vue-microbit-webusb
 Vue module to connect micro:bit via WebUSB
